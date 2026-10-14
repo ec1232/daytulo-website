@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connected assistants</title><style>body{max-width:650px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui;color:#242720;background:#faf9f5}h1,h2{line-height:1.2}h2{font-size:21px;margin-top:30px}a{color:#526c58}</style><h1>Connected assistants</h1>
+<p>Stored in your account and on your devices. Available to the assistants you connect. We don't sell your tasks, use them for ads or train models on them. Your calendar stays on your iPhone unless you choose to share busy times.</p>
+<p>The connector address is <a href="https://daytulo.com/mcp">https://daytulo.com/mcp</a>. It uses OAuth. You approve the connection in the Daytulo app with the eight-digit code under Rhythm → Connected assistants.</p>
+<h2>What an assistant can do</h2>
+<p>You grant scopes. A connection that can only add tasks cannot read your plan. A read-only connection cannot add, change or delete tasks.</p>
+<ul>
+<li><strong>Add tasks</strong> (<code>tasks:add</code>). Create a task. Read: no. Write.</li>
+<li><strong>Read tasks</strong> (<code>tasks:read</code>). List and open tasks and projects. Read.</li>
+<li><strong>Change tasks</strong> (<code>tasks:write</code>). Update, complete, reschedule, restore, and delete. Delete is a sensitive write: the assistant must confirm, and the task goes to Recently deleted for 30 days.</li>
+<li><strong>Read the plan</strong> (<code>plan:read</code>). Today’s plan and suggested slots. Read.</li>
+<li><strong>Busy times</strong> (<code>calendar:freebusy</code>). Start and end only, when you share busy times. Read.</li>
+<li><strong>Calendar titles</strong> (<code>calendar:details</code>). Titles as well, only if you share titles and tick this box. It is off unless you opt in. Read.</li>
+</ul>
+<h2>Set up</h2>
+<p><strong>Claude.</strong> Add a custom connector with the address above. Claude’s directory listing, when it is published, uses the same address. Approve the code in Daytulo.</p>
+<p><strong>ChatGPT.</strong> Add Daytulo as a connector with the same address. Approve the code in Daytulo. The terms for that listing are <a href="/legal/terms">these terms</a>.</p>
+<p><strong>Muse.</strong> Add the Daytulo connector from Muse when it is listed, or the address above. A read-only grant is available: read tasks, the plan and busy times, with no add or delete.</p>
+<p><strong>Grok Bot.</strong> Install the Daytulo plugin from the Cursor Marketplace when it is published. The plugin points at the same address. grok.com can also add <a href="https://daytulo.com/mcp">https://daytulo.com/mcp</a> as a custom connector. Approve the code in Daytulo.</p>
+<h2>Revoke</h2>
+<p>Open Daytulo, go to Rhythm, then Connected assistants, and remove the connection. That stops the assistant immediately. Removing the app from the assistant’s own settings does not by itself delete tasks already written.</p>
+<h2>Limits</h2>
+<p>Ten connected assistants per account. Twenty-five changes in one batch. A delete, or a batch of more than ten changes, asks the assistant to confirm before anything is written. Task titles are limited to 200 characters. Notes are limited to 100 KB.</p>
+<p><a href="/legal/privacy">Privacy</a> · <a href="/legal/terms">Terms</a> · <a href="/support">Support</a></p></html>
