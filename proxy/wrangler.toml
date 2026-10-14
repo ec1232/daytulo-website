@@ -1,9 +1,0 @@
-name = "daytulo-connector-proxy"
-main = "worker.js"
-compatibility_date = "2026-10-01"
-routes = [
-  { pattern = "daytulo.com/mcp", zone_name = "daytulo.com" },
-  { pattern = "daytulo.com/oauth/*", zone_name = "daytulo.com" },
-  { pattern = "daytulo.com/.well-known/oauth-*", zone_name = "daytulo.com" },
-  { pattern = "daytulo.com/.well-known/openai-apps-challenge", zone_name = "daytulo.com" },
-]
