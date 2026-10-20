@@ -62,7 +62,7 @@
           "@type": "HowToStep",
           "position": 4,
           "name": "Add Daytulo in ChatGPT.",
-          "text": "In ChatGPT on the web, go to Plugins, select the plus button, then Add custom MCP server. Name it Daytulo. Under Connection, enter https://mcp.daytulo.com/mcp. Choose OAuth for authentication. Read the risk warning, tick I understand and want to continue, select Create as a plugin, review the tools it finds, then install the plugin. OpenAI says you no longer need to turn on Developer mode first."
+          "text": "In ChatGPT on the web, go to Plugins, select the plus button, then Add custom MCP server. Name it Daytulo. Under Connection, enter https://mcp.daytulo.com/mcp. Choose OAuth for authentication. Read the risk warning, tick I understand and want to continue, select Create as a plugin, review the tools it finds, then install the plugin. OpenAI says you don’t need to turn on Developer mode first."
         },
         {
           "@type": "HowToStep",
@@ -80,7 +80,7 @@
           "@type": "HowToStep",
           "position": 7,
           "name": "Start planning.",
-          "text": "Start a new chat, type @ and select Daytulo, then ask. ChatGPT asks you to confirm actions that change data before it runs them."
+          "text": "Start a new chat, type @ and select Daytulo, then ask. By default, ChatGPT asks you to confirm actions that change data before it runs them."
         }
       ],
       "url": "https://daytulo.com/guides/plan-your-day-with-chatgpt/"
@@ -93,7 +93,7 @@
           "name": "Do I need ChatGPT Plus to use Daytulo in ChatGPT?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Plus is not enough on its own, going by OpenAI’s help centre as of 20 October 2026. It says full custom MCP connections are for ChatGPT Business and Enterprise/Edu on the web, and that Pro users can connect custom MCP servers with read and fetch permissions only. Free and Plus are not listed. OpenAI changes this often, so check its help page."
+            "text": "Plus isn’t listed, going by OpenAI’s help centre as of 20 October 2026. It says full custom MCP connections are for ChatGPT Business and Enterprise/Edu on the web, and that Pro users can connect custom MCP servers with read and fetch permissions only. Free and Plus are not listed. OpenAI changes this often, so check its help page."
           }
         },
         {
@@ -149,16 +149,16 @@
 <li><strong>Install Daytulo on your iPhone.</strong> Get <a href="https://apps.apple.com/app/id6813087689">Daytulo from the App Store</a>, sign in and finish setup. The connector needs an active subscription or free trial ($7.99/month or $39.99/year in the US, with a 3-day free trial).</li>
 <li><strong>Choose what calendar detail to share.</strong> In Daytulo, open <strong>Rhythm → Calendar sharing</strong>. Busy times are shared by default, so an assistant can plan around your meetings without seeing what they are. You can also share titles, or turn sharing off. Your calendar otherwise stays on your iPhone.</li>
 <li><strong>Check your ChatGPT plan.</strong> Adding a custom MCP server is done in ChatGPT on the web, not in the mobile app. OpenAI’s help centre says full MCP support, including write actions, is for ChatGPT Business and Enterprise/Edu. In a Business workspace, only admins and owners can create the connection. Pro users can connect custom MCP servers with read and fetch permissions only. Free and Plus plans are not listed.</li>
-<li><strong>Add Daytulo in ChatGPT.</strong> In ChatGPT on the web, go to <strong>Plugins</strong>, select the plus button, then <strong>Add custom MCP server</strong>. Name it <strong>Daytulo</strong>. Under Connection, enter <code>https://mcp.daytulo.com/mcp</code>. Choose OAuth for authentication. Read the risk warning, tick <strong>I understand and want to continue</strong>, select <strong>Create as a plugin</strong>, review the tools it finds, then install the plugin. OpenAI says you no longer need to turn on Developer mode first.</li>
+<li><strong>Add Daytulo in ChatGPT.</strong> In ChatGPT on the web, go to <strong>Plugins</strong>, select the plus button, then <strong>Add custom MCP server</strong>. Name it <strong>Daytulo</strong>. Under Connection, enter <code>https://mcp.daytulo.com/mcp</code>. Choose OAuth for authentication. Read the risk warning, tick <strong>I understand and want to continue</strong>, select <strong>Create as a plugin</strong>, review the tools it finds, then install the plugin. OpenAI says you don’t need to turn on Developer mode first.</li>
 <li><strong>Sign in with a code from the app.</strong> The assistant opens Daytulo’s page, <em>Connect an assistant to Daytulo</em>. On your iPhone, open Daytulo, go to <strong>Rhythm → Connected assistants</strong>, read the short notice about what an assistant can see, and tap <strong>Get a connection code</strong>. Type the eight digits on the page and tap <strong>Continue</strong>. If you are on the iPhone itself, the <strong>Open Daytulo on this iPhone</strong> button takes you straight there. A code lasts 10 minutes and works once. Never enter a code someone else sent you.</li>
 <li><strong>Choose what ChatGPT can do.</strong> Daytulo shows what the assistant is asking for, with a box for each: add tasks; read tasks and projects; change, complete and delete tasks, and manage projects; read the plan and deadlines; read busy times from the calendar you share; and read calendar event titles, which stays off unless you tick it. Untick anything you don’t want, then tap <strong>Allow</strong>.</li>
-<li><strong>Start planning.</strong> Start a new chat, type <strong>@</strong> and select Daytulo, then ask. ChatGPT asks you to confirm actions that change data before it runs them.</li>
+<li><strong>Start planning.</strong> Start a new chat, type <strong>@</strong> and select Daytulo, then ask. By default, ChatGPT asks you to confirm actions that change data before it runs them.</li>
 </ol>
 <h2>Prompts to try</h2>
 <ul>
-<li>“@Daytulo Plan my afternoon around my 3pm call.” ChatGPT reads today’s plan and your free and busy times, then suggests an order. It asks before moving anything.</li>
+<li>“@Daytulo Plan my afternoon around my 3pm call.” ChatGPT reads today’s plan and your free and busy times (if calendar sharing is on), then suggests an order. It asks before moving anything.</li>
 <li>“Add ‘call the dentist, 15 minutes’ to Daytulo.”</li>
-<li>“Find 45 minutes today for the expenses report.” ChatGPT asks Daytulo for up to three slots that avoid your busy times.</li>
+<li>“Find 45 minutes today for the expenses report.” ChatGPT asks Daytulo for up to three slots that avoid your shared busy times.</li>
 <li>“What’s at risk of slipping this week?”</li>
 <li>“I finished the slides. Mark them done.”</li>
 <li>“Move the gym session to Thursday.”</li>
@@ -167,7 +167,7 @@
 <h2>What happens in the app</h2>
 <ul>
 <li>Tasks the assistant adds land in <strong>Tasks → Inbox</strong> and are planned around your calendar, available hours and deadlines, like any other task. If Daytulo is closed, they are planned when it next opens on your iPhone.</li>
-<li>Changes the assistant makes, such as completing or rescheduling a task, sync to your account and devices. Daytulo then recalculates the plan.</li>
+<li>Changes the assistant makes, such as completing or rescheduling a task, are saved to your account and show up in Daytulo on your iPhone, which plans around them.</li>
 <li><strong>Rhythm → Connected assistants</strong> lists each connection with when it was last used. Daytulo also tells you when a new assistant is connected, so you can spot one you don’t recognise.</li>
 <li>To disconnect, tap <strong>Remove</strong> next to the assistant. That stops it at once.</li>
 </ul>
@@ -181,7 +181,7 @@
 <li><strong>It does not create calendar events.</strong> The assistant works with Daytulo tasks and your plan, not your calendar.</li>
 <li><strong>Deletes are careful.</strong> A delete, or a batch of more than 10 changes, is previewed and needs confirming. Deleted tasks stay in Recently deleted for 30 days. A batch is limited to 25 changes, and you can connect up to 10 assistants.</li>
 <li><strong>Assistants make mistakes.</strong> Read what the assistant proposes before you approve a change.</li>
-<li><strong>Your conversation is OpenAI’s.</strong> OpenAI handles the chat under its own terms and privacy policy. Daytulo receives only what the assistant sends to the connector.</li>
+<li><strong>OpenAI handles your conversation.</strong> OpenAI handles the chat under its own terms and privacy policy. Daytulo receives only what the assistant sends to the connector.</li>
 </ul>
 <h2>Sources</h2>
 <ul>
@@ -192,7 +192,7 @@
 <p>Prefer Claude? See <a href="/guides/plan-your-day-with-claude/">Can Claude Plan My Day?</a></p>
 <h2>Frequently asked questions</h2>
 <h3>Do I need ChatGPT Plus to use Daytulo in ChatGPT?</h3>
-<p>Plus is not enough on its own, going by OpenAI’s help centre as of 20 October 2026. It says full custom MCP connections are for ChatGPT Business and Enterprise/Edu on the web, and that Pro users can connect custom MCP servers with read and fetch permissions only. Free and Plus are not listed. OpenAI changes this often, so check its help page.</p>
+<p>Plus isn’t listed, going by OpenAI’s help centre as of 20 October 2026. It says full custom MCP connections are for ChatGPT Business and Enterprise/Edu on the web, and that Pro users can connect custom MCP servers with read and fetch permissions only. Free and Plus are not listed. OpenAI changes this often, so check its help page.</p>
 <h3>What is the Daytulo connector address?</h3>
 <p>https://mcp.daytulo.com/mcp. It uses OAuth, and you approve the connection with an eight-digit code from Rhythm → Connected assistants in the Daytulo app.</p>
 <h3>Can ChatGPT see my calendar?</h3>

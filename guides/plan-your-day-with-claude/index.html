@@ -56,7 +56,7 @@
           "@type": "HowToStep",
           "position": 3,
           "name": "Add Daytulo as a custom connector in Claude.",
-          "text": "On Pro or Max, in Claude on the web or in Claude Desktop, go to Customize → Connectors, click + Add, then Add custom connector. Name it Daytulo and enter https://mcp.daytulo.com/mcp as the remote MCP server URL, then click Continue. Review the authentication settings Claude detected and click Continue. Under Authentication, choose Sign in now. Under OAuth client, keep Use Claude’s published identity (Recommended). Daytulo uses OAuth, so leave request headers empty, then click Add. On the Free plan, this is your one custom connector."
+          "text": "On Free, Pro or Max, in Claude on the web or in Claude Desktop, go to Customize → Connectors, click + Add, then Add custom connector. Name it Daytulo and enter https://mcp.daytulo.com/mcp as the remote MCP server URL, then click Continue. Review the authentication settings Claude detected and click Continue. Under Authentication, choose Sign in now. Under OAuth client, keep Use Claude’s published identity (Recommended). Daytulo uses OAuth, so leave request headers empty, then click Add. On the Free plan, this is your one custom connector."
         },
         {
           "@type": "HowToStep",
@@ -93,7 +93,7 @@
           "name": "Can Claude plan my day?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, once you connect Daytulo. Claude can read your Daytulo plan for up to seven days, see your free and busy time today, suggest slots, and add, complete or reschedule tasks. Daytulo still does the scheduling around your calendar, available hours and deadlines."
+            "text": "Yes, once you connect Daytulo. Claude can read your Daytulo plan for up to seven days, see your free time today and any busy times you share, suggest slots, and add, complete or reschedule tasks. Daytulo still does the scheduling around your calendar, available hours and deadlines."
           }
         },
         {
@@ -148,7 +148,7 @@
 <ol>
 <li><strong>Install Daytulo on your iPhone.</strong> Get <a href="https://apps.apple.com/app/id6813087689">Daytulo from the App Store</a>, sign in and finish setup. The connector needs an active subscription or free trial ($7.99/month or $39.99/year in the US, with a 3-day free trial).</li>
 <li><strong>Choose what calendar detail to share.</strong> In Daytulo, open <strong>Rhythm → Calendar sharing</strong>. Busy times are shared by default, so an assistant can plan around your meetings without seeing what they are. You can also share titles, or turn sharing off. Your calendar otherwise stays on your iPhone.</li>
-<li><strong>Add Daytulo as a custom connector in Claude.</strong> On Pro or Max, in Claude on the web or in Claude Desktop, go to <strong>Customize → Connectors</strong>, click <strong>+ Add</strong>, then <strong>Add custom connector</strong>. Name it <strong>Daytulo</strong> and enter <code>https://mcp.daytulo.com/mcp</code> as the remote MCP server URL, then click <strong>Continue</strong>. Review the authentication settings Claude detected and click <strong>Continue</strong>. Under Authentication, choose <strong>Sign in now</strong>. Under OAuth client, keep <strong>Use Claude’s published identity (Recommended)</strong>. Daytulo uses OAuth, so leave request headers empty, then click <strong>Add</strong>. On the Free plan, this is your one custom connector.</li>
+<li><strong>Add Daytulo as a custom connector in Claude.</strong> On Free, Pro or Max, in Claude on the web or in Claude Desktop, go to <strong>Customize → Connectors</strong>, click <strong>+ Add</strong>, then <strong>Add custom connector</strong>. Name it <strong>Daytulo</strong> and enter <code>https://mcp.daytulo.com/mcp</code> as the remote MCP server URL, then click <strong>Continue</strong>. Review the authentication settings Claude detected and click <strong>Continue</strong>. Under Authentication, choose <strong>Sign in now</strong>. Under OAuth client, keep <strong>Use Claude’s published identity (Recommended)</strong>. Daytulo uses OAuth, so leave request headers empty, then click <strong>Add</strong>. On the Free plan, this is your one custom connector.</li>
 <li><strong>On a Team or Enterprise plan, ask an owner first.</strong> An Owner or Primary Owner adds the connector in <strong>Organization settings → Connectors → Add → Custom → Web</strong>, using the same address. Each member then goes to <strong>Customize → Connectors</strong>, finds Daytulo and clicks <strong>Connect</strong>.</li>
 <li><strong>Sign in with a code from the app.</strong> The assistant opens Daytulo’s page, <em>Connect an assistant to Daytulo</em>. On your iPhone, open Daytulo, go to <strong>Rhythm → Connected assistants</strong>, read the short notice about what an assistant can see, and tap <strong>Get a connection code</strong>. Type the eight digits on the page and tap <strong>Continue</strong>. If you are on the iPhone itself, the <strong>Open Daytulo on this iPhone</strong> button takes you straight there. A code lasts 10 minutes and works once. Never enter a code someone else sent you.</li>
 <li><strong>Choose what Claude can do.</strong> Daytulo shows what the assistant is asking for, with a box for each: add tasks; read tasks and projects; change, complete and delete tasks, and manage projects; read the plan and deadlines; read busy times from the calendar you share; and read calendar event titles, which stays off unless you tick it. Untick anything you don’t want, then tap <strong>Allow</strong>.</li>
@@ -157,7 +157,7 @@
 <p>Anthropic notes that Claude reaches connectors from its own cloud, across claude.ai, Claude Desktop and the mobile apps, so a connector you add is tied to your Claude account rather than one device.</p>
 <h2>Prompts to try</h2>
 <ul>
-<li>“Plan my afternoon around my 3pm call.” Claude reads today’s plan and your free and busy times, then proposes an order. It waits for your OK before moving anything.</li>
+<li>“Plan my afternoon around my 3pm call.” Claude reads today’s plan and your free and busy times (if calendar sharing is on), then proposes an order. It waits for your OK before moving anything.</li>
 <li>“Add ‘call the dentist, 15 minutes’ to Daytulo.”</li>
 <li>“Find 45 minutes today for the expenses report.”</li>
 <li>“What’s at risk of slipping this week?”</li>
@@ -167,7 +167,7 @@
 <h2>What happens in the app</h2>
 <ul>
 <li>Tasks the assistant adds land in <strong>Tasks → Inbox</strong> and are planned around your calendar, available hours and deadlines, like any other task. If Daytulo is closed, they are planned when it next opens on your iPhone.</li>
-<li>Changes the assistant makes, such as completing or rescheduling a task, sync to your account and devices. Daytulo then recalculates the plan.</li>
+<li>Changes the assistant makes, such as completing or rescheduling a task, are saved to your account and show up in Daytulo on your iPhone, which plans around them.</li>
 <li><strong>Rhythm → Connected assistants</strong> lists each connection with when it was last used. Daytulo also tells you when a new assistant is connected, so you can spot one you don’t recognise.</li>
 <li>To disconnect, tap <strong>Remove</strong> next to the assistant. That stops it at once.</li>
 </ul>
@@ -181,7 +181,7 @@
 <li><strong>It does not create calendar events.</strong> The assistant works with Daytulo tasks and your plan, not your calendar.</li>
 <li><strong>Deletes are careful.</strong> A delete, or a batch of more than 10 changes, is previewed and needs confirming. Deleted tasks stay in Recently deleted for 30 days. A batch is limited to 25 changes, and you can connect up to 10 assistants.</li>
 <li><strong>Assistants make mistakes.</strong> Read what the assistant proposes before you approve a change.</li>
-<li><strong>Your conversation is Anthropic’s.</strong> Anthropic handles the chat under its own terms and privacy policy. Daytulo receives only what the assistant sends to the connector.</li>
+<li><strong>Anthropic handles your conversation.</strong> Anthropic handles the chat under its own terms and privacy policy. Daytulo receives only what the assistant sends to the connector.</li>
 </ul>
 <h2>Sources</h2>
 <ul>
@@ -191,7 +191,7 @@
 <p>Prefer ChatGPT? See <a href="/guides/plan-your-day-with-chatgpt/">How to Plan Your Day with ChatGPT and Daytulo</a>.</p>
 <h2>Frequently asked questions</h2>
 <h3>Can Claude plan my day?</h3>
-<p>Yes, once you connect Daytulo. Claude can read your Daytulo plan for up to seven days, see your free and busy time today, suggest slots, and add, complete or reschedule tasks. Daytulo still does the scheduling around your calendar, available hours and deadlines.</p>
+<p>Yes, once you connect Daytulo. Claude can read your Daytulo plan for up to seven days, see your free time today and any busy times you share, suggest slots, and add, complete or reschedule tasks. Daytulo still does the scheduling around your calendar, available hours and deadlines.</p>
 <h3>Does the Daytulo connector work on Claude’s Free plan?</h3>
 <p>Yes. Anthropic says custom connectors work on Free, Pro, Max, Team and Enterprise plans, and Free users can add one custom connector.</p>
 <h3>What is the Daytulo connector address for Claude?</h3>
