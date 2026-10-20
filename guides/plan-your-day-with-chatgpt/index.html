@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to Plan Your Day with ChatGPT and Daytulo</title>
+<meta name="description" content="Step by step: connect ChatGPT to Daytulo with the MCP connector at https://mcp.daytulo.com/mcp, sign in with a code from the app, and plan your day by chat. Plan requirements included.">
+<link rel="canonical" href="https://daytulo.com/guides/plan-your-day-with-chatgpt/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://daytulo.com/#organization",
+      "name": "Intellingo Ltd",
+      "url": "https://daytulo.com/"
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to Plan Your Day with ChatGPT and Daytulo",
+      "description": "Step by step: connect ChatGPT to Daytulo with the MCP connector at https://mcp.daytulo.com/mcp, sign in with a code from the app, and plan your day by chat. Plan requirements included.",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://daytulo.com/#organization"
+      },
+      "author": {
+        "@id": "https://daytulo.com/#organization"
+      },
+      "tool": [
+        {
+          "@type": "HowToTool",
+          "name": "iPhone with Daytulo"
+        },
+        {
+          "@type": "HowToTool",
+          "name": "ChatGPT on the web"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Install Daytulo on your iPhone.",
+          "text": "Get Daytulo from the App Store, sign in and finish setup. The connector needs an active subscription or free trial ($7.99/month or $39.99/year in the US, with a 3-day free trial)."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Choose what calendar detail to share.",
+          "text": "In Daytulo, open Rhythm → Calendar sharing. Busy times are shared by default, so an assistant can plan around your meetings without seeing what they are. You can also share titles, or turn sharing off. Your calendar otherwise stays on your iPhone."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Check your ChatGPT plan.",
+          "text": "Adding a custom MCP server is done in ChatGPT on the web, not in the mobile app. OpenAI’s help centre says full MCP support, including write actions, is for ChatGPT Business and Enterprise/Edu. In a Business workspace, only admins and owners can create the connection. Pro users can connect custom MCP servers with read and fetch permissions only. Free and Plus plans are not listed."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Add Daytulo in ChatGPT.",
+          "text": "In ChatGPT on the web, go to Plugins, select the plus button, then Add custom MCP server. Name it Daytulo. Under Connection, enter https://mcp.daytulo.com/mcp. Choose OAuth for authentication. Read the risk warning, tick I understand and want to continue, select Create as a plugin, review the tools it finds, then install the plugin. OpenAI says you don’t need to turn on Developer mode first."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Sign in with a code from the app.",
+          "text": "The assistant opens Daytulo’s page, Connect an assistant to Daytulo. On your iPhone, open Daytulo, go to Rhythm → Connected assistants, read the short notice about what an assistant can see, and tap Get a connection code. Type the eight digits on the page and tap Continue. If you are on the iPhone itself, the Open Daytulo on this iPhone button takes you straight there. A code lasts 10 minutes and works once. Never enter a code someone else sent you."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Choose what ChatGPT can do.",
+          "text": "Daytulo shows what the assistant is asking for, with a box for each: add tasks; read tasks and projects; change, complete and delete tasks, and manage projects; read the plan and deadlines; read busy times from the calendar you share; and read calendar event titles, which stays off unless you tick it. Untick anything you don’t want, then tap Allow."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 7,
+          "name": "Start planning.",
+          "text": "Start a new chat, type @ and select Daytulo, then ask. By default, ChatGPT asks you to confirm actions that change data before it runs them."
+        }
+      ],
+      "url": "https://daytulo.com/guides/plan-your-day-with-chatgpt/"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need ChatGPT Plus to use Daytulo in ChatGPT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plus isn’t listed, going by OpenAI’s help centre as of 20 October 2026. It says full custom MCP connections are for ChatGPT Business and Enterprise/Edu on the web, and that Pro users can connect custom MCP servers with read and fetch permissions only. Free and Plus are not listed. OpenAI changes this often, so check its help page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Daytulo connector address?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "https://mcp.daytulo.com/mcp. It uses OAuth, and you approve the connection with an eight-digit code from Rhythm → Connected assistants in the Daytulo app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ChatGPT see my calendar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only what you share. By default Daytulo shares busy times, which are start and end times only. Event titles are shared only if you choose titles in Rhythm → Calendar sharing and tick that box when you connect. You can turn sharing off."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I disconnect ChatGPT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Daytulo, open Rhythm → Connected assistants and tap Remove next to ChatGPT. That stops it at once. You can also remove the plugin in ChatGPT."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>body{max-width:650px;margin:48px auto;padding:0 24px;font:17px/1.65 system-ui;color:#242720;background:#faf9f5}h1,h2{line-height:1.2}h2{font-size:21px;margin-top:30px}a{color:#526c58}</style>
+<style>h1{font-size:64px;letter-spacing:-3px;line-height:1}h2{font-size:30px;line-height:1.2}h3{font-size:21px;line-height:1.2;margin-top:30px}footer{margin-top:80px;font-size:14px;color:#6a7068}.store-badge{display:inline-block;margin-top:4px}.store-badge img{display:block;height:50px;width:auto}</style>
+<style>h1 a{color:inherit;text-decoration:none}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}th,td{border:1px solid #d9d7cf;padding:8px;text-align:left;vertical-align:top}thead th{background:#efede6}tbody th{font-weight:600}code{font-size:15px;background:#efede6;padding:1px 4px;border-radius:4px;overflow-wrap:anywhere}.updated{font-size:15px;color:#6a7068}</style>
+</head>
+<body>
+<header>
+<h1><a href="/">daytulo</a></h1>
+<a class="store-badge" href="https://apps.apple.com/app/id6813087689"><img src="/assets/app-store-badge.svg" alt="Download Daytulo on the App Store" width="150" height="50"></a>
+</header>
+<main>
+<h2>How to Plan Your Day with ChatGPT and Daytulo</h2>
+<p class="updated">Last updated: 20 October 2026. ChatGPT steps checked against OpenAI’s help centre on 20 October 2026.</p>
+<p>You can plan your day with ChatGPT by adding Daytulo as a custom MCP server in ChatGPT on the web, using the address https://mcp.daytulo.com/mcp, and approving it with a code from the Daytulo app on your iPhone. ChatGPT can then read your plan, suggest a slot, add tasks and, with your OK, complete or reschedule them, while Daytulo does the scheduling. One honest caveat first: OpenAI’s help centre currently says full custom MCP connections, including actions that change data, are for ChatGPT Business and Enterprise/Edu, and Pro users can connect custom servers with read and fetch permissions only.</p>
+<h2>What you need</h2>
+<ul>
+<li>An iPhone with <a href="https://apps.apple.com/app/id6813087689">Daytulo</a> and an active subscription or free trial.</li>
+<li>ChatGPT on the web, on a plan that allows custom MCP servers (see step 3).</li>
+<li>The connector address: <code>https://mcp.daytulo.com/mcp</code></li>
+</ul>
+<h2>Step by step</h2>
+<ol>
+<li><strong>Install Daytulo on your iPhone.</strong> Get <a href="https://apps.apple.com/app/id6813087689">Daytulo from the App Store</a>, sign in and finish setup. The connector needs an active subscription or free trial ($7.99/month or $39.99/year in the US, with a 3-day free trial).</li>
+<li><strong>Choose what calendar detail to share.</strong> In Daytulo, open <strong>Rhythm → Calendar sharing</strong>. Busy times are shared by default, so an assistant can plan around your meetings without seeing what they are. You can also share titles, or turn sharing off. Your calendar otherwise stays on your iPhone.</li>
+<li><strong>Check your ChatGPT plan.</strong> Adding a custom MCP server is done in ChatGPT on the web, not in the mobile app. OpenAI’s help centre says full MCP support, including write actions, is for ChatGPT Business and Enterprise/Edu. In a Business workspace, only admins and owners can create the connection. Pro users can connect custom MCP servers with read and fetch permissions only. Free and Plus plans are not listed.</li>
+<li><strong>Add Daytulo in ChatGPT.</strong> In ChatGPT on the web, go to <strong>Plugins</strong>, select the plus button, then <strong>Add custom MCP server</strong>. Name it <strong>Daytulo</strong>. Under Connection, enter <code>https://mcp.daytulo.com/mcp</code>. Choose OAuth for authentication. Read the risk warning, tick <strong>I understand and want to continue</strong>, select <strong>Create as a plugin</strong>, review the tools it finds, then install the plugin. OpenAI says you don’t need to turn on Developer mode first.</li>
+<li><strong>Sign in with a code from the app.</strong> The assistant opens Daytulo’s page, <em>Connect an assistant to Daytulo</em>. On your iPhone, open Daytulo, go to <strong>Rhythm → Connected assistants</strong>, read the short notice about what an assistant can see, and tap <strong>Get a connection code</strong>. Type the eight digits on the page and tap <strong>Continue</strong>. If you are on the iPhone itself, the <strong>Open Daytulo on this iPhone</strong> button takes you straight there. A code lasts 10 minutes and works once. Never enter a code someone else sent you.</li>
+<li><strong>Choose what ChatGPT can do.</strong> Daytulo shows what the assistant is asking for, with a box for each: add tasks; read tasks and projects; change, complete and delete tasks, and manage projects; read the plan and deadlines; read busy times from the calendar you share; and read calendar event titles, which stays off unless you tick it. Untick anything you don’t want, then tap <strong>Allow</strong>.</li>
+<li><strong>Start planning.</strong> Start a new chat, type <strong>@</strong> and select Daytulo, then ask. By default, ChatGPT asks you to confirm actions that change data before it runs them.</li>
+</ol>
+<h2>Prompts to try</h2>
+<ul>
+<li>“@Daytulo Plan my afternoon around my 3pm call.” ChatGPT reads today’s plan and your free and busy times (if calendar sharing is on), then suggests an order. It asks before moving anything.</li>
+<li>“Add ‘call the dentist, 15 minutes’ to Daytulo.”</li>
+<li>“Find 45 minutes today for the expenses report.” ChatGPT asks Daytulo for up to three slots that avoid your shared busy times.</li>
+<li>“What’s at risk of slipping this week?”</li>
+<li>“I finished the slides. Mark them done.”</li>
+<li>“Move the gym session to Thursday.”</li>
+</ul>
+<p>For write actions, ChatGPT shows what it is about to send and asks you to confirm. Check the details before you approve.</p>
+<h2>What happens in the app</h2>
+<ul>
+<li>Tasks the assistant adds land in <strong>Tasks → Inbox</strong> and are planned around your calendar, available hours and deadlines, like any other task. If Daytulo is closed, they are planned when it next opens on your iPhone.</li>
+<li>Changes the assistant makes, such as completing or rescheduling a task, are saved to your account and show up in Daytulo on your iPhone, which plans around them.</li>
+<li><strong>Rhythm → Connected assistants</strong> lists each connection with when it was last used. Daytulo also tells you when a new assistant is connected, so you can spot one you don’t recognise.</li>
+<li>To disconnect, tap <strong>Remove</strong> next to the assistant. That stops it at once.</li>
+</ul>
+<h2>Limitations</h2>
+<ul>
+<li><strong>ChatGPT plan and device.</strong> Custom MCP servers are added on ChatGPT web. Full support, including adding and changing tasks, is for Business and Enterprise/Edu; Pro is limited to read and fetch, according to OpenAI.</li>
+<li><strong>iPhone only.</strong> Daytulo itself runs on iPhone. The assistant works with your Daytulo account, but the plan lives in the app.</li>
+<li><strong>Subscription needed.</strong> When a subscription lapses, the assistant’s tool calls return “Daytulo needs an active subscription.”</li>
+<li><strong>Today’s free time.</strong> Availability and suggested slots cover today’s working day. The plan itself can be read for up to seven days ahead.</li>
+<li><strong>Calendar detail is your choice.</strong> With calendar sharing off, the assistant can’t see your meetings, so tell it about them, for example “I have a call at 3pm”. Event titles are only visible if you share titles and tick that box when you connect.</li>
+<li><strong>It does not create calendar events.</strong> The assistant works with Daytulo tasks and your plan, not your calendar.</li>
+<li><strong>Deletes are careful.</strong> A delete, or a batch of more than 10 changes, is previewed and needs confirming. Deleted tasks stay in Recently deleted for 30 days. A batch is limited to 25 changes, and you can connect up to 10 assistants.</li>
+<li><strong>Assistants make mistakes.</strong> Read what the assistant proposes before you approve a change.</li>
+<li><strong>OpenAI handles your conversation.</strong> OpenAI handles the chat under its own terms and privacy policy. Daytulo receives only what the assistant sends to the connector.</li>
+</ul>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://help.openai.com/en/articles/12584461">OpenAI Help Center: Connecting custom MCP servers in ChatGPT</a> (plans, steps, web only), read 20 October 2026</li>
+<li><a href="https://developers.openai.com/api/docs/guides/custom-mcp-server">OpenAI: Add custom MCP server</a>, read 20 October 2026</li>
+<li><a href="/docs/assistants/">Daytulo: Connected assistants</a> (scopes, limits, removing a connection)</li>
+</ul>
+<p>Prefer Claude? See <a href="/guides/plan-your-day-with-claude/">Can Claude Plan My Day?</a></p>
+<h2>Frequently asked questions</h2>
+<h3>Do I need ChatGPT Plus to use Daytulo in ChatGPT?</h3>
+<p>Plus isn’t listed, going by OpenAI’s help centre as of 20 October 2026. It says full custom MCP connections are for ChatGPT Business and Enterprise/Edu on the web, and that Pro users can connect custom MCP servers with read and fetch permissions only. Free and Plus are not listed. OpenAI changes this often, so check its help page.</p>
+<h3>What is the Daytulo connector address?</h3>
+<p>https://mcp.daytulo.com/mcp. It uses OAuth, and you approve the connection with an eight-digit code from Rhythm → Connected assistants in the Daytulo app.</p>
+<h3>Can ChatGPT see my calendar?</h3>
+<p>Only what you share. By default Daytulo shares busy times, which are start and end times only. Event titles are shared only if you choose titles in Rhythm → Calendar sharing and tick that box when you connect. You can turn sharing off.</p>
+<h3>How do I disconnect ChatGPT?</h3>
+<p>In Daytulo, open Rhythm → Connected assistants and tap Remove next to ChatGPT. That stops it at once. You can also remove the plugin in ChatGPT.</p>
+</main>
+<footer>
+<nav aria-label="Compare and guides">
+<p><strong>Compare and guides:</strong> <a href="/compare/structured/">Daytulo vs Structured</a> · <a href="/compare/tiimo/">Daytulo vs Tiimo</a> · <a href="/compare/sunsama/">Daytulo vs Sunsama</a> · <a href="/guides/plan-your-day-with-claude/">Plan your day with Claude and Daytulo</a></p>
+</nav>
+<p>Operated by Intellingo Ltd.</p>
+<nav aria-label="Site">
+<p><a href="/legal/privacy">Privacy</a> · <a href="/legal/terms">Terms</a> · <a href="/docs/assistants">Assistants</a> · <a href="/support">Support</a> · <a href="mailto:contact@daytulo.com">Contact</a></p>
+</nav>
+<p>The App Store licence is Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">standard EULA</a>.</p>
+</footer>
+</body>
+</html>
